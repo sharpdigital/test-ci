@@ -12,7 +12,6 @@ pipelines:
           - node
         script:
           - git remote add public git@github.com:sharpdigital/test-ci.git
-          - rm ./README.md
           - git pull public master
           - cp ./index.html ./docs/index.html
           - git add .
